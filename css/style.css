@@ -4,12 +4,16 @@
     box-sizing: border-box;
   }
 
+  p{
+      font-weight: 400;
+  }
+
   html{
     font-size: 16px;
   }
   
   body {
-    font-family: helvetica;
+    font-family: Arial, Helvetica, sans-serif;
     
   }
 
@@ -17,8 +21,8 @@
       background-image: url(../img/jumbo.png);
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: left top center;
-      height: 90vh;
+      background-position: center center;
+      height: 75vh;
   }
 
   a,
@@ -27,15 +31,22 @@
       font-weight: bold;
   }
   
+  /* container principale */
   .container {
     width: 100%;
-    max-width: 960px;
-    min-width: 300px;
+    max-width: 1100px;
+    min-width: 200px;
     margin: 0 auto;
+  }
+
+  /* gap a elementi che hanno classi .continer e . d-flex figli di section */
+  section .container.d-flex{
+      gap: 5rem;
   }
 
 /* UTILITY */
 
+/* utility padding */
   .p-y-xl{
       padding-top: 2rem;
       padding-bottom: 2rem;
@@ -51,6 +62,11 @@
       padding-bottom: .65rem;
   }
 
+  .p-x-s{
+      padding-right: .65rem;
+      padding-left: .65rem;
+  }
+
   .p-y-xs{
       padding-top: .25rem;
       padding-bottom: .25rem;
@@ -61,16 +77,19 @@
       padding-right: .25rem;
   }
 
+  /* utility testo */
   .big-text{
       font-size: 3rem;
+      font-weight: 800;
   }
   
   .medium-text{
-      font-size: 1.5rem;
+      font-size: 2.2rem;
+      font-weight: 800;
   }
 
   .small-text{
-      font-size: 1.1rem;
+      font-size: 1.2rem;
   }
 
   .default-text{
@@ -81,20 +100,13 @@
       color: rgb(255, 255, 255);
   }
 
+  /* utility background */
   .bg-grey{
-      background-color: #D3D3D3;
+      background-color: #F6F6F6;
   }
 
   .bg-dark{
     background-color: black;
-  }
-
-  .bg-pink{
-    background-color: #FFC0CB;
-  }
-
-  .bg-light-blue{
-    background-color: #1E90FF;
   }
 
   .bg-dark-pink{
@@ -105,10 +117,7 @@
       background-color: #20B2AA;
   }
 
-  .bg-water-light{
-      background-color: #7FFFD4;
-  }
-
+  /* utility flex */
   .d-flex{
       display: flex;
   }
@@ -122,27 +131,27 @@
   }
 
   /* classi all'iterno dell'header */
-  .container .logo{
+  nav .container .logo{
       width: 20%;
   }
 
-  .container .main-menu{
+  nav .container .main-menu{
     flex-grow: 1;
     line-height: 1.7;
 }
 
-  .container .login{
+  nav .container .login{
       width: 20%;
       text-align: right;
       line-height: 1.7;
   }
 
-  .main-menu ul{
+  nav .main-menu ul{
       justify-content: center;
-      gap: 20px;
+      gap: 30px;
   }
 
-  .main-menu ul li{
+  nav .main-menu ul li{
       list-style: none;
   }
 
@@ -153,9 +162,9 @@
       display: inline-block;
   }
 
-  /* creo un nuovo container-s per mantenere il container più pulito possibile */
+  /* hero-content */
   section .container .hero-content{
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
     min-height: 300px;
     text-align: center;
@@ -163,25 +172,27 @@
     padding-bottom: 2rem;
   }
 
-  .hero-content p{
-      padding-top: 2.5rem;
+  .hero-content p,
+  .container .col.col-s p{
+      padding-top: 2.2rem;
       padding-bottom: 1.5rem;
-      font-weight: bold;
       line-height: 30px;
   }
 
+  /* classi button */
   .btn{
-    padding: 0.8rem 1.5rem;
+    padding: 1rem 1.7rem;
     border-radius: 30px;
     border: 0;
     display: inline-block;
     text-decoration: none;
     font-weight: bold;
+    cursor: pointer;
   }
   
   .btn.btn-small{ 
     font-size: 0.9rem;
-    padding: 0.4rem 1rem;
+    padding: 0.6rem 1.2rem;
       
   }
 
@@ -193,6 +204,7 @@
   .button-section :first-child{
     margin-right: 1rem;
   }
+
   /* .col classe per tutte le colonne  */
   .container .col{
     min-height: 400px;
@@ -208,12 +220,14 @@
       flex-grow: 1;
   }
 
+
   .container .container-l{
-      min-height: 550px;
-      background-color: #228B22;
+      min-height: 600px;
+      border: 1px dashed black;
   }
 
-  .logo-footer{
+  /* classi footer */
+  footer .logo-footer{
       padding: .10rem .20rem;
       border: 1px dashed black;
   }
