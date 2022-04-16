@@ -1,3 +1,4 @@
+/* classi per bonus  */
 svg.wave-1hkxOo{
     color: #F6F6F6;
     display: block;
@@ -25,5 +26,32 @@ footer .col-s a:hover{
 .btn.btn-light-blue:hover{
     background-color: #a8b5e1;
     color: white;
+}
+
+.bg-jumbotron.bg-download{
+    background-color: #23272A;
+    background-image: none;
+}
+
+.bg-download h1{
+    line-height: 50px;
+}
+
+.bg-download .col-s img{
+    height: 100%;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+
+
+.container-fixed{
+    width: 100%;
+    max-width: 1100px;
+    min-width: 200px;
+    max-height: 1200px;
+    margin: 0 auto;
 }
 

@@ -16,13 +16,6 @@
     font-family: Arial, Helvetica, sans-serif;
   }
   
-  header{
-      background-image: url(../img/jumbo.png);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      height: 75vh;
-  }
 
   a{
       font-size: .9rem;
@@ -36,6 +29,14 @@
     min-width: 200px;
     margin: 0 auto;
   }
+
+  .bg-jumbotron{
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 75vh;
+}
 
   /* gap a elementi che hanno classi .continer e . d-flex figli di section */
   section .container.d-flex{
@@ -170,8 +171,8 @@
       display: inline-block;
   }
 
-  /* hero-content */
-  section .container .hero-content{
+  /* jumbotron-content */
+  section .container .jumbotron-content{
     width: 80%;
     margin: 0 auto;
     min-height: 300px;
@@ -268,6 +269,6 @@
   }
 
   footer .col.col-s a{
-      margin-top: .6rem;
+      margin-top: .7rem;
       padding: 0;
   }
