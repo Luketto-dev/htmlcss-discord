@@ -130,6 +130,10 @@
       justify-content: space-between;
   }
 
+  .a-items-center{
+      align-items: center;
+  }
+
   .row-reverse{
     flex-direction: row-reverse;
   }
@@ -145,7 +149,6 @@
 
   nav .container .main-menu{
     flex-grow: 1;
-    line-height: 1.7;
 }
 
   nav .container .login{
@@ -217,7 +220,7 @@
 
   /* .col classe per tutte le colonne  */
   .container .col{
-    min-height: 400px;
+    min-height: 200px;
   }
 
   /* divido le colonne in base alla grandezza */

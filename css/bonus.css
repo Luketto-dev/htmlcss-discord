@@ -41,17 +41,19 @@ footer .col-s a:hover{
     height: 100%;
 }
 
-.wrap{
-    flex-wrap: wrap;
+.bg-nitro{
+    background-image: url(../img/bg-video_Moment.jpg);
+    background-position: top center;
 }
 
-
-
-.container-fixed{
-    width: 100%;
-    max-width: 1100px;
-    min-width: 200px;
-    max-height: 1200px;
+.card{
+    width: 90%;
     margin: 0 auto;
+    border-radius: 12px;
 }
+
+.card.card-water{
+    background-color: #23E1EB;
+}
+
 
